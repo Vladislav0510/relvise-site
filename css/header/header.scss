@@ -4,7 +4,12 @@
   top: 0;
   left: 0;
   z-index: 50;
+
 }
+.line{
+  height: 1px;
+}
+
 
 .header__container {
   display: flex;
@@ -78,7 +83,7 @@
 .company__logo {
   display: flex;
   align-items: center;
-  
+
 }
 
 
@@ -101,8 +106,8 @@
   }
   @media (max-width: 400px) {
     & img{
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
     }
     &{
       flex: 0 1 auto;
@@ -121,7 +126,7 @@
       font-size: 24px;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 404px) {
     & {
       font-size: 18px;
     }
@@ -161,6 +166,11 @@
   color: #000;
   font-size: 16px;
   line-height: calc(19 / 16 * 100%);
+  @media (max-width: 450px) {
+    &{
+      font-size: 14px;
+    }
+  }
 }
 
 .contacts__call {
@@ -178,12 +188,47 @@
   text-align: center;
   color: inherit;
   transition-duration: 1s;
-
   &:hover {
     border: 2px solid #D7B22CFF;
     text-decoration: underline;
     color: #66C05D;
   }
-;
+  @media (max-width: 450px) {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+.header__services{
+  background: #fff;
+}
+
+.services__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
+}
+
+.services{}
+.services__menu{}
+.services__menu-list{
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & > *:not(:last-child){
+    margin: 0 40px 0 0;
+  }
+
+}
+.services__menu-item{
+
+}
+.services__menu-link{
+  color: #000;
+  font-size: 16px;
+  line-height: 160%;
+
 
 }
