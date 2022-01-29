@@ -1,2 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import "nullstyle/nullstyle";
+@import "header/header";
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
