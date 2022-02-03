@@ -3,6 +3,11 @@
 
 .offers {
   padding: 70px 0;
+  @media (max-width: 1049px) {
+    &{
+      padding: 70px 0 50px 0;
+    }
+  }
 }
 
 .offers__container {
@@ -24,12 +29,23 @@
 
 .offers__body {
   display: flex;
-  margin: 0 -15px;
+  flex-wrap: wrap;
+  margin: 0 -15px -15px;
 }
 
 .offers__column {
-  padding: 0 15px;
+  padding: 0 15px 15px;
   flex: 0 1 25%;
+  @media (max-width: 1049px) {
+    &{
+      flex: 0 1 50%;
+    }
+  }
+  @media (max-width: 498px) {
+    &{
+      flex: 0 1 100%;
+    }
+  }
 }
 
 .offers__item {
@@ -81,7 +97,10 @@
   color: #FFFFFF;
   letter-spacing: 0.05em;
   padding: 10px 40px;
+  transition-duration: 1s;
   &:hover{
     text-decoration: underline;
+    background: #EFEFEF;
+    color: #66C05D;
   }
 }

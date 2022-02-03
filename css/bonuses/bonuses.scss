@@ -3,6 +3,9 @@
 
 .bonuses {
   padding: 32px 0 132px 0;
+  @media (max-width: 498px) {
+    padding: 32px 0 80px 0;
+  }
 }
 
 .bonuses__container {
@@ -10,12 +13,19 @@
 
 .bonuses__body {
   display: flex;
-  margin: 0 -15px;
+  margin: 0 -15px -15px;
+  flex-wrap: wrap;
 }
 
 .bonuses__column {
   flex: 0 1 50%;
-  padding: 0 15px;
+
+  padding: 0 15px 15px;
+  @media (max-width: 1049px) {
+    &{
+      flex: 0 1 100%;
+    }
+  }
 }
 
 .bonuses__item {
@@ -72,9 +82,11 @@
   padding: 9px 29px;
   line-height: calc(16 / 14 * 100%);
   color: #FFFFFF;
-
+  transition-duration: 1s;
   &:hover {
     text-decoration: underline;
+    background: #EFEFEF;
+    color: #66C05D;
   }
 
 
