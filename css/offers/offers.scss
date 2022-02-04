@@ -25,6 +25,12 @@
 }
 
 .offers__image {
+  @media (max-width: 450px) {
+    &{
+      width: 131px;
+
+    }
+  }
 }
 
 .offers__body {
